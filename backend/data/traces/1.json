@@ -1,0 +1,51 @@
+{
+  "config": {
+    "policy": "round_robin",
+    "latency_window_size": 20
+  },
+  "nodes": [
+    {
+      "node_id": "node-a",
+      "capacity": 2,
+      "active_requests": [],
+      "healthy": true,
+      "latency_window": []
+    },
+    {
+      "node_id": "node-b",
+      "capacity": 2,
+      "active_requests": [],
+      "healthy": true,
+      "latency_window": []
+    }
+  ],
+  "events": [
+    {
+      "event_id": "e1",
+      "tick": 0,
+      "sequence": 0,
+      "event_type": "request_submitted",
+      "request_id": "r1",
+      "node_id": null,
+      "latency_ms": null
+    },
+    {
+      "event_id": "e2",
+      "tick": 1,
+      "sequence": 0,
+      "event_type": "request_routed",
+      "request_id": "r1",
+      "node_id": null,
+      "latency_ms": null
+    },
+    {
+      "event_id": "e3",
+      "tick": 3,
+      "sequence": 0,
+      "event_type": "request_completed",
+      "request_id": "r1",
+      "node_id": null,
+      "latency_ms": null
+    }
+  ]
+}

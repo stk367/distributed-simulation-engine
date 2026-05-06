@@ -1,0 +1,112 @@
+{
+  "config": {
+    "policy": "round_robin",
+    "latency_window_size": 20
+  },
+  "nodes": [
+    {
+      "node_id": "node-a",
+      "capacity": 3,
+      "active_requests": [],
+      "healthy": true,
+      "latency_window": []
+    },
+    {
+      "node_id": "node-b",
+      "capacity": 2,
+      "active_requests": [],
+      "healthy": true,
+      "latency_window": []
+    },
+    {
+      "node_id": "node-c",
+      "capacity": 4,
+      "active_requests": [],
+      "healthy": true,
+      "latency_window": []
+    }
+  ],
+  "events": [
+    {
+      "event_id": "e1",
+      "tick": 0,
+      "sequence": 0,
+      "event_type": "request_submitted",
+      "request_id": "r1",
+      "node_id": null,
+      "latency_ms": null
+    },
+    {
+      "event_id": "e2",
+      "tick": 0,
+      "sequence": 1,
+      "event_type": "request_submitted",
+      "request_id": "r2",
+      "node_id": null,
+      "latency_ms": null
+    },
+    {
+      "event_id": "e3",
+      "tick": 0,
+      "sequence": 2,
+      "event_type": "request_submitted",
+      "request_id": "r3",
+      "node_id": null,
+      "latency_ms": null
+    },
+    {
+      "event_id": "e4",
+      "tick": 1,
+      "sequence": 0,
+      "event_type": "request_routed",
+      "request_id": "r1",
+      "node_id": null,
+      "latency_ms": null
+    },
+    {
+      "event_id": "e5",
+      "tick": 1,
+      "sequence": 1,
+      "event_type": "request_routed",
+      "request_id": "r2",
+      "node_id": null,
+      "latency_ms": null
+    },
+    {
+      "event_id": "e6",
+      "tick": 2,
+      "sequence": 0,
+      "event_type": "request_routed",
+      "request_id": "r3",
+      "node_id": null,
+      "latency_ms": null
+    },
+    {
+      "event_id": "e7",
+      "tick": 4,
+      "sequence": 0,
+      "event_type": "request_completed",
+      "request_id": "r1",
+      "node_id": null,
+      "latency_ms": null
+    },
+    {
+      "event_id": "e8",
+      "tick": 5,
+      "sequence": 0,
+      "event_type": "request_completed",
+      "request_id": "r2",
+      "node_id": null,
+      "latency_ms": null
+    },
+    {
+      "event_id": "e9",
+      "tick": 6,
+      "sequence": 0,
+      "event_type": "request_completed",
+      "request_id": "r3",
+      "node_id": null,
+      "latency_ms": null
+    }
+  ]
+}

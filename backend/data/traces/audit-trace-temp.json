@@ -1,0 +1,26 @@
+{
+  "config": {
+    "policy": "round_robin",
+    "latency_window_size": 20
+  },
+  "nodes": [
+    {
+      "node_id": "node-a",
+      "capacity": 1,
+      "active_requests": [],
+      "healthy": true,
+      "latency_window": []
+    }
+  ],
+  "events": [
+    {
+      "event_id": "e1",
+      "tick": 0,
+      "sequence": 0,
+      "event_type": "request_submitted",
+      "request_id": "r1",
+      "node_id": null,
+      "latency_ms": null
+    }
+  ]
+}
